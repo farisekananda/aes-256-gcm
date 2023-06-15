@@ -7,6 +7,9 @@
 const crypto = require("browserify-cipher")
 // const randomBytes = require("randombytes")
 // const crypto = require("crypto-browserify")
+// Since postman already has CryptoJS, no need to import it here to reduce bundle size
+// But will need this in case of want to test outside postman environment
+// const CryptoJS = require("crypto-js")
 
 const ALGORITHM = "aes-256-gcm"
 const BLOCK_SIZE_BYTES = 12 // 96 bit
